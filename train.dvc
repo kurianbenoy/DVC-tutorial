@@ -1,0 +1,14 @@
+wdir: .
+cmd: python src/train.py data/features model.pkl
+outs:
+- path: model.pkl
+  metric: false
+  cache: true
+  persist: false
+  md5: d32e60e40fcd38180f2c4805e7ab5a54
+deps:
+- path: src/train.py
+  md5: d05e0201a3fb47c878defea65bd85e4d
+- path: data/features
+  md5: 219688f33352b64cb160e0a9a7bcb268.dir
+md5: 25315085cbf92a46070509a2ee50a803
